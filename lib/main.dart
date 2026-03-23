@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:smart_garden_app/register.dart';
+import 'package:smart_garden_app/registers.dart/register.dart';
 
 void main() {
   runApp(const MyApp());

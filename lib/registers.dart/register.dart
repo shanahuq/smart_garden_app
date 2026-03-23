@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_garden_app/registeronaepod.dart';
+import 'package:smart_garden_app/loginfiles.dart/login.dart';
+import 'package:smart_garden_app/registers.dart/registeronaepod.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -78,20 +79,29 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     SizedBox(height: 20.h),
-                    Container(
-                      width: 366.w,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.symmetric(vertical: 16.h),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.r),
-                        border: Border.all(color: Colors.white),
-                      ),
-                      child: Text(
-                        'Login',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18.sp,
-                          color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        Login;
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Login()),
+                        );
+                      },
+                      child: Container(
+                        width: 366.w,
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.symmetric(vertical: 16.h),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.r),
+                          border: Border.all(color: Colors.white),
+                        ),
+                        child: Text(
+                          'Login',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 18.sp,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
