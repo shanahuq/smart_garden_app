@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_garden_app/helloisaac.dart';
+import 'package:smart_garden_app/bottomnavibar.dart';
+import 'package:smart_garden_app/homepage.dart';
 import 'package:smart_garden_app/loginfiles.dart/login2.dart';
 
 import 'package:smart_garden_app/registers.dart/register.dart';
@@ -15,7 +16,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    
     return ScreenUtilInit(
       designSize: Size(414, 896),
       minTextAdapt: true,
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: const Helloisaac(),
+        home: const HomePage(),
       ),
     );
   }

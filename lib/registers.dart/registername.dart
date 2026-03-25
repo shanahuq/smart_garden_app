@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_garden_app/helloisaac.dart';
+import 'package:smart_garden_app/bottomnavibar.dart';
+import 'package:smart_garden_app/homepage.dart';
 import 'package:smart_garden_app/loginfiles.dart/login.dart';
 
 class Registername extends StatefulWidget {
@@ -68,10 +69,9 @@ class _RegisternameState extends State<Registername> {
                   SizedBox(height: 380.h),
                   GestureDetector(
                     onTap: () {
-                      Helloisaac;
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Helloisaac()),
+                        MaterialPageRoute(builder: (context) => Bottomnavibar()),
                       );
                     },
                     child: Container(

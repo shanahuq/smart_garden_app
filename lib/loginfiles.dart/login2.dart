@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_garden_app/helloisaac.dart';
+import 'package:smart_garden_app/bottomnavibar.dart';
+import 'package:smart_garden_app/homepage.dart';
 
 class Login2 extends StatefulWidget {
   const Login2({super.key});
@@ -199,10 +200,9 @@ class _Login2State extends State<Login2> {
                   SizedBox(height: 200.h),
                   GestureDetector(
                     onTap: () {
-                      Helloisaac;
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Helloisaac()),
+                        MaterialPageRoute(builder: (context) => Bottomnavibar()),
                       );
                     },
                     child: Container(
