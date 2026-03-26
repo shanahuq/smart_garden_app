@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smart_garden_app/charliesgarden.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -119,15 +120,26 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                         ],
                                       ),
-                                      CircleAvatar(
-                                        radius: 18.r,
-                                        backgroundColor: const Color(
-                                          0xffE6F4EF,
-                                        ),
-                                        child: Icon(
-                                          Icons.arrow_forward_ios,
-                                          size: 16.sp,
-                                          color: const Color(0xff0C9359),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder:
+                                                  (context) => Charliesgarden(),
+                                            ),
+                                          );
+                                        },
+                                        child: CircleAvatar(
+                                          radius: 18.r,
+                                          backgroundColor: const Color(
+                                            0xffE6F4EF,
+                                          ),
+                                          child: Icon(
+                                            Icons.arrow_forward_ios,
+                                            size: 16.sp,
+                                            color: const Color(0xff0C9359),
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -575,7 +587,7 @@ class _HomePageState extends State<HomePage> {
           SizedBox(height: 20.h),
 
           Divider(),
-          SizedBox(height: 10.h,),
+          SizedBox(height: 10.h),
 
           /// 💡 Lights Row
           Row(
@@ -598,10 +610,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          SizedBox(height: 10.h,),
+          SizedBox(height: 10.h),
 
           Divider(),
-          SizedBox(height: 10.h,),
+          SizedBox(height: 10.h),
 
           /// ⚙️ Automatic Settings
           Row(
@@ -620,19 +632,22 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Text(
                     'Off at Sunset',
-                    style: TextStyle(fontSize: 13.sp, color:Color.fromARGB(146, 6, 73, 44),),
+                    style: TextStyle(
+                      fontSize: 13.sp,
+                      color: Color.fromARGB(146, 6, 73, 44),
+                    ),
                   ),
                   SizedBox(width: 6.w),
                   Icon(
                     Icons.arrow_forward_ios,
                     size: 14.sp,
-                    color:Color.fromARGB(146, 6, 73, 44),
+                    color: Color.fromARGB(146, 6, 73, 44),
                   ),
                 ],
               ),
             ],
           ),
-          SizedBox(height: 10.h,),
+          SizedBox(height: 10.h),
 
           Divider(),
 
