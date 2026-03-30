@@ -611,7 +611,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              /// ✅ Switch instead of image (better)
+            
               Switch(
                 value: true,
                 activeColor: Color(0xff0C9359),
