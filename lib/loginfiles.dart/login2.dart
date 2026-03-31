@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_garden_app/bottomnavibar.dart';
-import 'package:smart_garden_app/homepage.dart';
+// import 'package:smart_garden_app/homepage.dart';
 
 class Login2 extends StatefulWidget {
   const Login2({super.key});

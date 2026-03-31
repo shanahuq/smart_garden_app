@@ -5,6 +5,7 @@ import 'package:smart_garden_app/homepage.dart';
 import 'package:smart_garden_app/loginfiles.dart/login2.dart';
 
 import 'package:smart_garden_app/registers.dart/register.dart';
+import 'package:smart_garden_app/shop.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: const Bottomnavibar(),
+        home: const Shop(),
       ),
     );
   }

@@ -34,10 +34,13 @@ class _BottomnavibarState extends State<Bottomnavibar> {
                   selected_index = 0;
                 });
               },
-              child: Image.asset(
-                'assets/logo (1).png',
+              child: SizedBox(
                 height: selected_index == 0 ? 40.h : 32.h,
                 width: selected_index == 0 ? 40.w : 32.w,
+                child: Image.asset(
+                  'assets/Frame 10.png',
+                  color: selected_index == 0 ? Color.fromARGB(255, 3, 100, 58) : const Color.fromARGB(255, 24, 24, 24),
+                ),
               ),
             ),
             GestureDetector(
@@ -46,10 +49,13 @@ class _BottomnavibarState extends State<Bottomnavibar> {
                   selected_index = 1;
                 });
               },
-              child: Image.asset(
-                'assets/Frame (4).png',
+              child: SizedBox(
                 height: selected_index == 1 ? 40.h : 32.h,
                 width: selected_index == 1 ? 40.w : 32.w,
+                child: Image.asset(
+                  'assets/Vector (8).png',
+                  color: selected_index == 1 ? Colors.green : Colors.grey,
+                ),
               ),
             ),
             GestureDetector(
@@ -58,10 +64,13 @@ class _BottomnavibarState extends State<Bottomnavibar> {
                   selected_index = 2;
                 });
               },
-              child: Image.asset(
-                'assets/Frame 8.png',
+              child: SizedBox(
                 height: selected_index == 2 ? 40.h : 32.h,
                 width: selected_index == 2 ? 40.w : 32.w,
+                child: Image.asset(
+                  'assets/Vector (9).png',
+                  color: selected_index == 2 ? Colors.green : Colors.grey,
+                ),
               ),
             ),
           ],
