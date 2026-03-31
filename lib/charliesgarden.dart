@@ -329,6 +329,198 @@ class _CharliesgardenState extends State<Charliesgarden> {
                           ),
                         ],
                       ),
+                    if (selectedTab == 2)
+                      Column(
+                        children: [
+                          Container(
+                            width: 374.w,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.r),
+                              color: Colors.white,
+                              border: Border.all(
+                                color: const Color.fromARGB(116, 158, 158, 158),
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(vertical: 25.h),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/Vector (6).png',
+                                            height: 20.h,
+                                            width: 20.w,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Connectivity',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+
+                                      Row(
+                                        children: [
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              right: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Connected via Wifi',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w400,
+                                                fontSize: 14.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_right,
+                                            color: Color(0xff0C9359),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 30.h),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/Vector (7).png',
+                                            height: 20.h,
+                                            width: 20.w,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Plantlight Settings',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+
+                                      Row(
+                                        children: [
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              right: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Currently ON',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w400,
+                                                fontSize: 14.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_right,
+                                            color: Color(0xff0C9359),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 30.h),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/Vector (3).png',
+                                            height: 20.h,
+                                            width: 20.w,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Cycle Settings',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+
+                                      Icon(
+                                        Icons.keyboard_arrow_right,
+                                        color: Color(0xff0C9359),
+                                      ),
+                                    ],
+                                  ),
+
+                                  SizedBox(height: 30.h),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/Frame (7).png',
+                                            height: 20.h,
+                                            width: 20.w,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Aepod Sync Settings',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16.sp,
+                                                color: Color(0xff06492C),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+
+                                      Icon(
+                                        Icons.keyboard_arrow_right,
+                                        color: Color(0xff0C9359),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                   ],
                 ),
               ),
