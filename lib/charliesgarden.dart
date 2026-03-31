@@ -317,17 +317,263 @@ class _CharliesgardenState extends State<Charliesgarden> {
                       ),
 
                     if (selectedTab == 1)
-                      Column(
-                        children: [
-                          Text(
-                            'Sort by:',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16.sp,
-                              color: Color(0xff06492CBF),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.vertical,
+                        child: Column(
+                          children: [
+                            SizedBox(height: 20.h),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Text(
+                                    'Sort by:',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 16.sp,
+                                      color: Color(0xff06492C),
+                                    ),
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 10.w),
+                                      child: Text(
+                                        'Urgency: High to Low',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 16.sp,
+                                          color: Color(0xff0C9359),
+                                        ),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      radius: 20.r,
+                                      backgroundColor: Color.fromARGB(
+                                        36,
+                                        12,
+                                        147,
+                                        88,
+                                      ),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_down,
+                                        color: Color(0xff0C9359),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
-                          ),
-                        ],
+                            SizedBox(height: 30.h),
+                            Container(
+                              width: 358.w,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5.r),
+                                color: Color(0xff0C9359),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(vertical: 17.h),
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.w),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/Vector (31).png',
+                                            height: 20.h,
+                                            width: 20.w,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 10.w,
+                                            ),
+                                            child: Text(
+                                              'Water Refill Due',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16.sp,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+
+                                      Padding(
+                                        padding: EdgeInsets.only(right: 20.w),
+                                        child: Text(
+                                          '5hr ago',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 14,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 20.h),
+                            Text(
+                              'This Aepod’s water level is low (10%), you should \nrefill it.',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 350.w,
+                              child: Divider(
+                                color: const Color.fromARGB(69, 158, 158, 158),
+                              ),
+                            ),
+                            SizedBox(height: 20.h),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.w),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Refill Now',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 18.sp,
+                                      color: Color(0xff0C9359),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 10.w),
+                                    child: CircleAvatar(
+                                      radius: 20.r,
+                                      backgroundColor: Color.fromARGB(
+                                        36,
+                                        12,
+                                        147,
+                                        88,
+                                      ),
+                                      child: Icon(
+                                        Icons.arrow_forward_ios,
+                                        color: Color(0xff0C9359),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 350.w,
+                              child: Divider(
+                                color: const Color.fromARGB(69, 158, 158, 158),
+                              ),
+                            ),
+                            SizedBox(height: 20.h),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.w),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/Vector (32).png',
+                                        height: 20.h,
+                                        width: 20.w,
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsets.only(left: 6.w),
+                                        child: Text(
+                                          'New cycle started',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 16.sp,
+                                            color: Color(0xff06492C),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 10.w),
+                                    child: Text(
+                                      '5m',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14.sp,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.h),
+                            Text(
+                              'You just started a new cycle, time to grow new \nplants 😊 ',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                              ),
+                            ),
+                            SizedBox(height: 8.h),
+                            SizedBox(
+                              width: 350.w,
+                              child: Divider(
+                                color: const Color.fromARGB(69, 158, 158, 158),
+                              ),
+                            ),
+                            SizedBox(height: 30.h),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Row(
+                                    children: [
+                                      Image.asset(
+                                        'assets/Frame (1).png',
+                                        height: 20.h,
+                                        width: 20.w,
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsets.only(left: 5.w),
+                                        child: Text(
+                                          'Oregano ready for harvest',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 16.sp,
+                                            color: Color(0xff06492C),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+
+                                Text(
+                                  '2 days ago',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 14.sp,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 30.h,)
+                          ],
+                        ),
                       ),
                   ],
                 ),
