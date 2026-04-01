@@ -292,108 +292,110 @@ class _ShopState extends State<Shop> {
         borderRadius: BorderRadius.circular(20.r),
         color: Colors.white,
       ),
-      child: Column(
-        children: [
-          SizedBox(height: 20.h),
-          Container(
-            height: 8.h,
-            width: 48.w,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30.r),
-              color: Colors.grey,
+      child: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            SizedBox(height: 20.h),
+            Container(
+              height: 8.h,
+              width: 48.w,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.r),
+                color: Colors.grey,
+              ),
             ),
-          ),
-          SizedBox(height: 40.h),
-          Image.asset('assets/image 1 (4).png', height: 120.h, width: 120.w),
-          Text(
-            'Lemon Balm',
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 32.sp,
-              color: Colors.black,
+            SizedBox(height: 40.h),
+            Image.asset('assets/image 1 (4).png', height: 120.h, width: 120.w),
+            Text(
+              'Lemon Balm',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 32.sp,
+                color: Colors.black,
+              ),
             ),
-          ),
-          Text(
-            'Herb-\$20',
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 21.sp,
-              color: Color(0xff0C9359),
+            Text(
+              'Herb-\$20',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 21.sp,
+                color: Color(0xff0C9359),
+              ),
             ),
-          ),
-          SizedBox(height: 20.h),
-          Text(
-            'Lemon Balm is a 50cm to 80cm high perennial herb with \n        a four-edged, branching, sparsely-haired stalk.',
-            style: TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 14.sp,
-              color: Colors.black,
+            SizedBox(height: 20.h),
+            Text(
+              'Lemon Balm is a 50cm to 80cm high perennial herb with \n        a four-edged, branching, sparsely-haired stalk.',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 14.sp,
+                color: Colors.black,
+              ),
             ),
-          ),
-          SizedBox(height: 20.h),
-          Text(
-            'Read more',
-            style: TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 18.sp,
-              color: Color(0xff0C9359),
+            SizedBox(height: 20.h),
+            Text(
+              'Read more',
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 18.sp,
+                color: Color(0xff0C9359),
+              ),
             ),
-          ),
-          SizedBox(height: 20.h),
-          Padding(
-            padding: EdgeInsets.only(left: 30.w),
-            child: Row(
-              children: [
-                Container(
-                  width: 64.w,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5.r),
-                    border: Border.all(color: Color(0xff0C9359)),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 17.h),
-                    child: Image.asset(
-                      'assets/Frame (9).png',
-                      height: 24.h,
-                      width: 24.w,
+            SizedBox(height: 20.h),
+            Padding(
+              padding: EdgeInsets.only(left: 30.w),
+              child: Row(
+                children: [
+                  Container(
+                    width: 64.w,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5.r),
+                      border: Border.all(color: Color(0xff0C9359)),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 17.h),
+                      child: Image.asset(
+                        'assets/Frame (9).png',
+                        height: 24.h,
+                        width: 24.w,
+                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 10.w),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Lemonbalm()),
-                      );
-                    },
-                    child: Container(
-                      width: 300.w,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5.r),
-                        color: Color(0xff0C9359),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.h),
-                        child: Center(
-                          child: Text(
-                            'Add to Cart',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 18.sp,
-                              color: Colors.white,
+                  Padding(
+                    padding: EdgeInsets.only(left: 10.w),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Lemonbalm()),
+                        );
+                      },
+                      child: Container(
+                        width: 300.w,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5.r),
+                          color: Color(0xff0C9359),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(vertical: 16.h),
+                          child: Center(
+                            child: Text(
+                              'Add to Cart',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 18.sp,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
