@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_garden_app/bottomnavibar.dart';
 import 'package:smart_garden_app/homepage.dart';
+import 'package:smart_garden_app/lemonbalm.dart';
 import 'package:smart_garden_app/loginfiles.dart/login2.dart';
 
 import 'package:smart_garden_app/registers.dart/register.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: const Shop(),
+        home: const Bottomnavibar(),
       ),
     );
   }

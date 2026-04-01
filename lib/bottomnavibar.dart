@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_garden_app/Menu.dart';
 import 'package:smart_garden_app/Profile.dart';
 import 'package:smart_garden_app/homepage.dart';
+import 'package:smart_garden_app/shop.dart';
 
 class Bottomnavibar extends StatefulWidget {
   const Bottomnavibar({super.key});
@@ -13,7 +14,7 @@ class Bottomnavibar extends StatefulWidget {
 
 class _BottomnavibarState extends State<Bottomnavibar> {
   int selected_index = 0;
-  final List<Widget> page = [HomePage(), Menu(), Profile()];
+  final List<Widget> page = [HomePage(), Shop(), Profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
