@@ -98,7 +98,7 @@ class _ShopState extends State<Shop> {
                       ),
                     ),
                     SizedBox(
-                      height: 300.h,
+                      height:MediaQuery.of(context).size.height* 0.38,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: items.length,
@@ -117,7 +117,8 @@ class _ShopState extends State<Shop> {
                                 }
                               },
                               child: Container(
-                                width: 180.w,
+                                padding: EdgeInsets.symmetric(horizontal: 5.w,vertical: 10.h),
+                                // width: 180.w,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20.r),
                                   color: Colors.white,
@@ -134,10 +135,10 @@ class _ShopState extends State<Shop> {
                                   children: [
                                     Image.asset(
                                       items[index]['image'],
-                                      height: 180.h,
-                                      width: 180.w,
+                                      // height: 180.h,
+                                      // width: 180.w,
                                     ),
-                                    Text(
+                                    Text(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                                       items[index]['name'],
                                       style: TextStyle(
                                         fontWeight: FontWeight.w600,
